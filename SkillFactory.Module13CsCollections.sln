@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33403.182
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SkillFactory.Module13.Task6.1", "SkillFactory.Module13.Task6.1\SkillFactory.Module13.Task6.1.csproj", "{68F61F10-546E-447B-AA39-1C515A313C5F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{68F61F10-546E-447B-AA39-1C515A313C5F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{68F61F10-546E-447B-AA39-1C515A313C5F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{68F61F10-546E-447B-AA39-1C515A313C5F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{68F61F10-546E-447B-AA39-1C515A313C5F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C3684035-1289-44F0-A200-AD8DCB342808}
+	EndGlobalSection
+EndGlobal
