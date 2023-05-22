@@ -30,7 +30,8 @@ namespace SkillFactory.Module13Task6_2
                 WordFromFileParser parser = new WordFromFileParser(counter);
                 parser.ParseFromFile(inputPath);
 
-                Console.WriteLine(counter.Words.Count);
+                WordsTop MyTop10 = new WordsTop(10);
+                MyTop10.GetTopUsed(counter);
             }
             catch (StackOverflowException)
             {

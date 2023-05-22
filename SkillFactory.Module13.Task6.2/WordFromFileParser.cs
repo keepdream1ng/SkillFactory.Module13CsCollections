@@ -1,4 +1,5 @@
 ﻿using System.Diagnostics;
+using static System.Net.Mime.MediaTypeNames;
 
 namespace SkillFactory.Module13.Task6_2
 {
@@ -13,7 +14,8 @@ namespace SkillFactory.Module13.Task6_2
         }
         private void ParseWords(string input)
         {
-            string[] tempWords = input.Split(separators, StringSplitOptions.RemoveEmptyEntries);
+            var noPunctuationText = new string(input.Where(c => !char.IsPunctuation(c)).ToArray());
+            string[] tempWords = noPunctuationText.Split(separators, StringSplitOptions.RemoveEmptyEntries);
             if (tempWords.Length != 0)
             {
                 foreach (string word in tempWords)
