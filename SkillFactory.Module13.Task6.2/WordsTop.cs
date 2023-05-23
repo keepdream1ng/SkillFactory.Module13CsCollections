@@ -1,6 +1,4 @@
-﻿using System.Collections.Generic;
-
-namespace SkillFactory.Module13.Task6_2
+﻿namespace SkillFactory.Module13.Task6_2
 {
     public class WordsTop
     {
@@ -51,6 +49,7 @@ namespace SkillFactory.Module13.Task6_2
 
         public void GetTopUsed(RepeatWordsCounter counter)
         {
+            ListOfMostUsedWords.Clear();
             foreach (var item in counter.Words)
             {
                 if (item.Value > LowestCount)
@@ -60,9 +59,8 @@ namespace SkillFactory.Module13.Task6_2
             }
             foreach (var node in ListOfMostUsedWords)
             {
-                Console.WriteLine(node.count+ " " + node.word);
+                Console.WriteLine($"{node.count, -15} {node.word, 15}");
             }
-            ListOfMostUsedWords.Clear();
         }
     }
 }

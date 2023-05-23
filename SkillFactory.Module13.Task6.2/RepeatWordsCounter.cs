@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace SkillFactory.Module13.Task6_2
+﻿namespace SkillFactory.Module13.Task6_2
 {
     public class RepeatWordsCounter
     {

@@ -1,12 +1,9 @@
-﻿using System.Diagnostics;
-using static System.Net.Mime.MediaTypeNames;
-
-namespace SkillFactory.Module13.Task6_2
+﻿namespace SkillFactory.Module13.Task6_2
 {
     public class WordFromFileParser
     {
         public RepeatWordsCounter Counter { get; private set; }
-        private char[] separators = new char[] { ' ', '.', '\t', '\n', ';', ':', '!', '-', '?'};
+        private char[] separators = new char[] { ' ', '\t', '\n'};
 
         public WordFromFileParser(RepeatWordsCounter wordCouter)
         {
