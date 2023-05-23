@@ -1,5 +1,4 @@
 ﻿using SkillFactory.Module13.Task6_2;
-using System.Diagnostics;
 
 namespace SkillFactory.Module13Task6_2
 {
@@ -28,12 +27,10 @@ namespace SkillFactory.Module13Task6_2
 
                 RepeatWordsCounter counter = new RepeatWordsCounter();
                 WordFromFileParser parser = new WordFromFileParser(counter);
-                var timer = Stopwatch.StartNew();
                 parser.ParseFromFile(inputPath);
 
                 WordsTop MyTop10 = new WordsTop(10);
                 MyTop10.GetTopUsed(counter);
-                Console.WriteLine($"Executed in {timer.ElapsedMilliseconds} msc.");
             }
             catch (StackOverflowException)
             {

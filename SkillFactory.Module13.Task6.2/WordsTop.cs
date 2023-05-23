@@ -57,9 +57,10 @@
                     AddToTop(item.Value, item.Key);
                 }
             }
+            Console.WriteLine($"Top {ListLenght} most used words are:");
             foreach (var node in ListOfMostUsedWords)
             {
-                Console.WriteLine($"{node.count, -15} {node.word, 15}");
+                Console.WriteLine($"{node.count, -10} {node.word}");
             }
         }
     }
